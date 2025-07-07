@@ -15,7 +15,7 @@ _M.apartments = {}
 _M.bookings = {}
 
 local function sign(data)
-	return md5.sumhexa(array.traverse(t)..config.private_key)
+	return md5.sumhexa(array.traverse(data)..config.private_key)
 end
 
 local function get_result(str,url,full)
