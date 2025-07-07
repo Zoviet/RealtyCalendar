@@ -1,25 +1,26 @@
 local json = require('cjson')
---local api = require('litepms.api')
+local api = require('realty.api')
 local date = require("date")
-local md5 = require "md5"
-local array = require('utils.array')
 
-local t = {
-	notes = "first event calendar", 
-	amount = 2000, 
-	begin_date = "2016-03-26",	
-	end_date = "2016-03-29", 
-	status = 4, 
-	client_attributes = {fio = "Test Test Testov", phone = "791231223123", email = "test@example.com"}
-}
+res,err = api.bookings.get(date():fmt('%Y-%m-%d'))
 
-local secret = 'sdjfkajeiruqfjkadjfaad'
+if not res then print(json.encode(err))
+else print(json.encode(res)) end
 
-local str = array.traverse(t)..secret
+res,err = api.bookings.add(291102,date():fmt('%Y-%m-%d'),date():adddays(2):fmt('%Y-%m-%d'),4,1234,'test')
 
-print(str)
-
-print(md5.sumhexa(str))
+if not res then print(json.encode(err))
+else 
+	print(json.encode(res)) 
+	local id = string.format("%u", res.id)
+	print(id)
+	res,err = api.bookings.edit(291102,id,date():fmt('%Y-%m-%d'),date():adddays(3):fmt('%Y-%m-%d'),4,4321,'test edit')
+	if not res then print(json.encode(err))
+	else print(json.encode(res)) end
+	res,err = api.bookings.delete(291102,id)
+	if not res then print(json.encode(err))
+	else print(json.encode(res)) end
+end
 
 
 

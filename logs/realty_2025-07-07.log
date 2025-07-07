@@ -1,0 +1,12 @@
+[ERROR Mon Jul  7 21:56:18 2025] ./realty/api.lua:76: https://realtycalendar.ru/api/v1/apartments/291102/event_calendars:{"errors":{"sign":["Sign key isn't correct"]}}
+[ERROR Mon Jul  7 22:02:31 2025] ./realty/api.lua:77: https://realtycalendar.ru/api/v1/apartments/291102/event_calendars:{"id":116321960,"begin_date":"2025-07-07","end_date":"2025-07-09","amount":1234.0,"status":"request","is_delete":false,"apartment_id":291102,"prepayment":0,"source":null}
+[ERROR Mon Jul  7 22:03:06 2025] ./realty/api.lua:77: https://realtycalendar.ru/api/v1/apartments/291102/event_calendars:{"id":116322010,"begin_date":"2025-07-07","end_date":"2025-07-09","amount":1234.0,"status":"request","is_delete":false,"apartment_id":291102,"prepayment":0,"source":null}
+[ERROR Mon Jul  7 22:26:33 2025] ./realty/api.lua:106: https://realtycalendar.ru/api/v1/apartments/291102/event_calendars/116324561.0:{"status":404,"error":"Not Found"}
+[ERROR Mon Jul  7 22:27:34 2025] ./realty/api.lua:106: https://realtycalendar.ru/api/v1/apartments/291102/event_calendars/116324668.0:{"status":404,"error":"Not Found"}
+[ERROR Mon Jul  7 22:28:01 2025] ./realty/api.lua:106: https://realtycalendar.ru/api/v1/apartments/291102/event_calendars/116324710.0:{"status":404,"error":"Not Found"}
+[ERROR Mon Jul  7 22:31:48 2025] ./realty/api.lua:106: https://realtycalendar.ru/api/v1/apartments/291102/event_calendars/116325088:{"status":404,"error":"Not Found"}
+[ERROR Mon Jul  7 22:39:09 2025] ./realty/api.lua:99: https://realtycalendar.ru/api/v1/apartments/291102/event_calendars/116325961:{"status":404,"error":"Not Found"}
+[ERROR Mon Jul  7 22:39:40 2025] ./realty/api.lua:99: https://realtycalendar.ru/api/v1/apartments/291102/event_calendars/116326034:{"status":404,"error":"Not Found"}
+[ERROR Mon Jul  7 22:39:41 2025] ./realty/api.lua:43: https://realtycalendar.ru/api/v1/apartments/291102/event_calendars/116326034?sign=0374b88f410fcc3610d16e3ac8135f52:Expected value but found T_END at character 1
+[ERROR Mon Jul  7 22:42:27 2025] ./realty/api.lua:99: https://realtycalendar.ru/api/v1/apartments/291102/event_calendars/116326403:{"status":404,"error":"Not Found"}
+[ERROR Mon Jul  7 22:42:50 2025] ./realty/api.lua:99: https://realtycalendar.ru/api/v1/apartments/291102/event_calendars/116326445:{"status":404,"error":"Not Found"}
